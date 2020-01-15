@@ -1,10 +1,15 @@
 # Django specific files
 .vscode
 venv
+.sqlite3
+**/*.pyc
+**/__pycache__
+media
+.DS_Store
 
 # //////Make active for live job///////
 #static_in_env
-#.env
+.env
 
 
 ## Ignore Visual Studio temporary files, build results, and
