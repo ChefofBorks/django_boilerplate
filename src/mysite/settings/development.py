@@ -1,7 +1,7 @@
 from .base import *
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config('DEBUG', cast=bool)
 ALLOWED_HOSTS = ['127.0.0.1']
 
 
@@ -46,3 +46,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
+STRIPE_PUBLIC_KEY = ''
+STRIPE_SECRET_KEY = ''
